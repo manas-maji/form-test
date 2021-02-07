@@ -24,6 +24,10 @@ mixin LocalValidator {
     return _checkValidNumberOrLessThanEqualOther(val);
   }
 
+  String validateBundleWeight(String val) {
+    return _checkValidNumberOrLessThanEqualOther(val);
+  }
+
   String _checkValidNumberOrLessThanEqualOther(String val,
       [String other = '0']) {
     double parsedVal = double.tryParse(val ?? '0');
